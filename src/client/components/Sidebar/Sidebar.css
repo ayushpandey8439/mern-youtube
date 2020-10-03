@@ -1,0 +1,7 @@
+.sidebar_container {
+  background-color: #282828;
+  width: 20vw;
+  max-height: 90vh;
+  height: 90vh;
+  overflow-y: scroll;
+}

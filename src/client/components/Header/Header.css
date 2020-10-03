@@ -1,0 +1,79 @@
+.header {
+  background-color: #282828;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-between;
+  flex-direction: row;
+  position: sticky;
+  z-index: 100;
+  top: 0px;
+}
+.header_branding {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:center;
+}
+.header_menu_icon {
+  color: white;
+}
+
+.header_logo {
+  height: 25px;
+  padding-left: 10px;
+  padding-right: 5px;
+}
+.header_search{
+  display: flex;
+  justify-content: center;
+  flex-grow: 2;
+}
+.header_search_box {
+  margin-left: 30px;
+  background-color: black;
+  height: 21px;
+  border-radius: 3px 0px 0px 3px;
+  border: solid gray 1px;
+  padding: 6px;
+  color: white;
+  flex-grow: 0.5;
+}
+.header_brand {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  font-family: sans-serif;
+  padding-right: 5px;
+}
+.header_brand :active,
+:focus {
+  border: #065fd4 solid 1px;
+  outline: none;
+}
+
+.header_search_icon {
+  display: flex;
+  background-color: #313131;
+  color: #6f6f6f;
+  height: 32px;
+  width: 50px;
+  border: solid gray 1px;
+  border-radius: 0px 3px 3px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_options {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header_option {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  padding: 5px;
+}
