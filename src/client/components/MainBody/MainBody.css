@@ -1,0 +1,10 @@
+.main_body_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  width: 80vw;
+  min-width: 80vw;
+  justify-content: space-evenly;
+  max-height: calc(100vh - 60px);
+}

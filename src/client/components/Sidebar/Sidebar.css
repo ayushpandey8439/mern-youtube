@@ -1,7 +1,8 @@
 .sidebar_container {
   background-color: #282828;
   width: 20vw;
-  max-height: 90vh;
-  height: 90vh;
+  min-width: 200px;
+  min-height: calc(100vh - 48px);
+  height: calc(100vh - 48px);
   overflow-y: scroll;
 }

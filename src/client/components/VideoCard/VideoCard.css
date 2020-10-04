@@ -1,0 +1,34 @@
+.video_card_body {
+  color: white;
+  max-width: 18vw;
+  width: 18vw;
+}
+.video_thumbnail {
+  width: 100%;
+}
+
+.channel_title {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: 100;
+  color: gray;
+}
+
+.video_duration {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  font-size: small;
+  border-radius: 5px;
+}
+.video_thumbnail_container {
+  position: relative;
+}
+
+.statistics {
+  font-size: small;
+  color: gray;
+
+}

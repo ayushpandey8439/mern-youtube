@@ -1,0 +1,22 @@
+.viewport {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+.header {
+  flex: 10 10 100%;
+}
+.body {
+  display: flex;
+  flex-direction: row;
+}
+.sidebar {
+  flex: 0;
+  flex-direction: row;
+}
+.main_body {
+  flex: 0;
+  flex-direction: row;
+}

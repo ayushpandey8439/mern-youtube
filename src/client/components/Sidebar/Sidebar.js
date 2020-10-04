@@ -1,5 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -29,75 +30,77 @@ function Sidebar() {
   const classes = useStyles();
 
   return (
-    <div>
-      <List className="sidebar_container">
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <HomeIcon />
-          </ListItemIcon>
-          <ListItemText primary="Home" className={classes.ListItemText} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <WhatshotIcon />
-          </ListItemIcon>
-          <ListItemText primary="Trending" className={classes.ListItemText} />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <SubscriptionsIcon />
-          </ListItemIcon>
-          <ListItemText
-            primary="Subscriptions"
-            className={classes.ListItemText}
-          />
-        </ListItem>
-        <Divider className={classes.Divider} />
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <VideoLibraryIcon />
-          </ListItemIcon>
-          <ListItemText primary="Library" className={classes.ListItemText} />
-        </ListItem>
+    <Router>
+      <div className="sidebar_container">
+        <List>
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <HomeIcon />
+            </ListItemIcon>
+            <ListItemText primary="Home" className={classes.ListItemText} />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <WhatshotIcon />
+            </ListItemIcon>
+            <ListItemText primary="Trending" className={classes.ListItemText} />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <SubscriptionsIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Subscriptions"
+              className={classes.ListItemText}
+            />
+          </ListItem>
+          <Divider className={classes.Divider} />
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <VideoLibraryIcon />
+            </ListItemIcon>
+            <ListItemText primary="Library" className={classes.ListItemText} />
+          </ListItem>
 
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <HistoryIcon />
-          </ListItemIcon>
-          <ListItemText primary="History" className={classes.ListItemText} />
-        </ListItem>
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <HistoryIcon />
+            </ListItemIcon>
+            <ListItemText primary="History" className={classes.ListItemText} />
+          </ListItem>
 
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <OndemandVideoIcon />
-          </ListItemIcon>
-          <ListItemText
-            primary="Your videos"
-            className={classes.ListItemText}
-          />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <WatchLaterIcon />
-          </ListItemIcon>
-          <ListItemText
-            primary="Watch later"
-            className={classes.ListItemText}
-          />
-        </ListItem>
-        <ListItem button>
-          <ListItemIcon className={classes.ListItemIcon}>
-            <ThumbUpAltIcon />
-          </ListItemIcon>
-          <ListItemText
-            primary="Liked videos"
-            className={classes.ListItemText}
-          />
-        </ListItem>
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <OndemandVideoIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Your videos"
+              className={classes.ListItemText}
+            />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <WatchLaterIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Watch later"
+              className={classes.ListItemText}
+            />
+          </ListItem>
+          <ListItem button>
+            <ListItemIcon className={classes.ListItemIcon}>
+              <ThumbUpAltIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Liked videos"
+              className={classes.ListItemText}
+            />
+          </ListItem>
 
-        <Divider className={classes.Divider} />
-      </List>
-    </div>
+          <Divider className={classes.Divider} />
+        </List>
+      </div>
+    </Router>
   );
 }
 

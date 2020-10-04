@@ -15,7 +15,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content:center;
+  justify-content: center;
 }
 .header_menu_icon {
   color: white;
@@ -26,7 +26,17 @@
   padding-left: 10px;
   padding-right: 5px;
 }
-.header_search{
+.header_logo_link {
+  outline: none;
+  display: flex;
+  border: none;
+}
+.header_logo_link :focus,
+:active {
+  outline: none;
+  border: none;
+}
+.header_search {
   display: flex;
   justify-content: center;
   flex-grow: 2;
@@ -47,10 +57,10 @@
   color: white;
   font-family: sans-serif;
   padding-right: 5px;
+  outline: none;
 }
 .header_brand :active,
 :focus {
-  border: #065fd4 solid 1px;
   outline: none;
 }
 

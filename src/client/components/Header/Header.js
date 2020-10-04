@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, BrowserRouter as Router } from "react-router-dom";
 import "./Header.css";
 import logo from "./../../assets/logo.png";
 import MenuIcon from "@material-ui/icons/Menu";
@@ -10,39 +11,43 @@ import VideoCallIcon from "@material-ui/icons/VideoCall";
 
 function Header() {
   return (
-    <div className="header">
-      <div className="header_branding">
-        <MenuIcon className="header_menu_icon"></MenuIcon>
-        <img src={logo} className="header_logo"></img>
-        <div className="header_brand">YouTube</div>
-      </div>
+    <Router>
+      <div className="header">
+        <div className="header_branding">
+          <MenuIcon className="header_menu_icon"></MenuIcon>
+          <Link to="/" className="header_logo_link">
+            <img src={logo} className="header_logo"></img>
+            <div className="header_brand">YouTube</div>
+          </Link>
+        </div>
 
-      <div className="header_search">
-        <input
-          variant="outlined"
-          className="header_search_box"
-          placeholder="Search"
-        ></input>
-        <div className="header_search_icon">
-          <SearchIcon></SearchIcon>
+        <div className="header_search">
+          <input
+            variant="outlined"
+            className="header_search_box"
+            placeholder="Search"
+          ></input>
+          <div className="header_search_icon">
+            <SearchIcon></SearchIcon>
+          </div>
         </div>
-      </div>
 
-      <div className="header_options">
-        <div className="header_option">
-          <VideoCallIcon fontSize="large" />
-        </div>
-        <div className="header_option">
-          <AppsIcon fontSize="large" />
-        </div>
-        <div className="header_option">
-          <NotificationsIcon fontSize="large" />
-        </div>
-        <div className="header_option">
-          <AccountCircleIcon fontSize="large" />
+        <div className="header_options">
+          <div className="header_option">
+            <VideoCallIcon fontSize="large" />
+          </div>
+          <div className="header_option">
+            <AppsIcon fontSize="large" />
+          </div>
+          <div className="header_option">
+            <NotificationsIcon fontSize="large" />
+          </div>
+          <div className="header_option">
+            <AccountCircleIcon fontSize="large" />
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
