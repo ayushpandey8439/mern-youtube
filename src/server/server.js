@@ -10,7 +10,7 @@ const testdata = path.join(__dirname, "./testdata.json");
 
 const youtube = google.youtube({
   version: "v3",
-  auth: "AIzaSyDCQZ0uhFI9LAR-gMqJro3f9qUOYaPyxag",
+  auth: "AIzaSyBNDOODhx7yktTA4Rg1aD4pa47d6uFtKwo",
 });
 
 // Compresses App
@@ -31,7 +31,7 @@ app.get("/videos", function (req, res) {
       chart: "mostPopular",
       regionCode: "US",
     },
-    (error, response) => {
+    (response, error) => {
       if (error) {
         res.status(400).send(error);
       } else {
